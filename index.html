@@ -482,12 +482,16 @@
       <div class="step-body">
         <div class="info-box green">✅ 全て無料・短時間で設定できます。採択率に直結するので<strong>必ず全て設定</strong>しましょう！</div>
 
-        <button class="detail-toggle-btn" onclick="toggleDetail('corp-5-detail', this)" style="margin-top:14px;">
-          🔍 わからない方はこちら：詳しい操作手順を見る
+        <!-- 加点① -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:14px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">① セキュリティアクション 自己宣言ID</div><div class="doc-desc">5から始まる11桁のIDをスクショで保存済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('corp-5-d1', this)" style="margin-top:8px;">
+          🔍 ①の詳しい手順を見る（5〜10分・無料）
           <span class="toggle-arrow">›</span>
         </button>
-        <div class="detail-content" id="corp-5-detail">
-          <span class="method-label">① セキュリティアクション 自己宣言ID（5〜10分・無料）</span>
+        <div class="detail-content" id="corp-5-d1">
           <div class="info-box blue" style="margin-top:0;">💡 原則、先に <strong>STEP 4 のGビズIDプライム</strong> を取得してから申請します（ログインに使います）。</div>
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://www.ipa.go.jp/security/security-action/entry/" class="url" target="_blank" rel="noopener">https://www.ipa.go.jp/security/security-action/entry/</a> を開く</div></div>
@@ -499,8 +503,18 @@
             <div class="op-step"><div class="op-num">7</div><div class="op-text">確認画面で <span class="btn-name green">この内容で申請する</span> をクリック</div></div>
             <div class="op-step"><div class="op-num">8</div><div class="op-text">申請完了画面に <strong>5から始まる11桁の「自己宣言ID」</strong> が発番される。メールにも届くので<strong>スクショで必ず保存</strong>（申請時に使用）</div></div>
           </div>
-          <div class="detail-divider"></div>
-          <span class="method-label">② IT戦略ナビ（IT戦略マップ作成・10〜15分）</span>
+        </div>
+
+        <!-- 加点② -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:16px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">② IT戦略ナビ（IT戦略マップ）PDF取得</div><div class="doc-desc">結果PDFをダウンロードし担当者へ送付済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('corp-5-d2', this)" style="margin-top:8px;">
+          🔍 ②の詳しい手順を見る（10〜15分）
+          <span class="toggle-arrow">›</span>
+        </button>
+        <div class="detail-content" id="corp-5-d2">
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://digiwith.smrj.go.jp/it-map/" class="url" target="_blank" rel="noopener">https://digiwith.smrj.go.jp/it-map/</a> を開き <span class="btn-name">IT戦略ナビ</span> を開始</div></div>
             <div class="op-step"><div class="op-num">2</div><div class="op-text">質問に順番に回答：業種 → 所在地（<strong>納税証明書に記載の所在地</strong>）→ 従業員数 → 事業所数（<strong>本店を含む・自宅兼事業所なら自宅も含める</strong>）</div></div>
@@ -510,8 +524,18 @@
             <div class="op-step"><div class="op-num">6</div><div class="op-text">現在の経営課題を1つ選択 → 業務上の問題点を1〜2つ選択 → 具体的に取り組みたい事を1〜2つ選択</div></div>
             <div class="op-step"><div class="op-num">7</div><div class="op-text">経営チェック結果画面で <span class="btn-name green">PDFダウンロード</span> → <strong>ダウンロードしたPDFを担当者へ送付</strong></div></div>
           </div>
-          <div class="detail-divider"></div>
-          <span class="method-label">③ 省力化ナビ（5〜10分）</span>
+        </div>
+
+        <!-- 加点③ -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:16px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">③ 省力化ナビ 登録完了</div><div class="doc-desc">PDFをダウンロードしLINEへ送付済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('corp-5-d3', this)" style="margin-top:8px;">
+          🔍 ③の詳しい手順を見る（5〜10分）
+          <span class="toggle-arrow">›</span>
+        </button>
+        <div class="detail-content" id="corp-5-d3">
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://labour-saving.smrj.go.jp/" class="url" target="_blank" rel="noopener">https://labour-saving.smrj.go.jp/</a> を開き <span class="btn-name green">ここから始める</span> をクリック（スマホは「省力化ナビ」で検索）</div></div>
             <div class="op-step"><div class="op-num">2</div><div class="op-text">基本情報を入力。<strong>「GビズID」「企業名」「担当者名」は必ず入力</strong>（加点に必須）。利用規約の最下部で <span class="btn-name">同意する</span> にチェック</div></div>
@@ -519,8 +543,18 @@
             <div class="op-step"><div class="op-num">4</div><div class="op-text">濃い青の吹き出しで表示された箇所のイラストをクリック</div></div>
             <div class="op-step"><div class="op-num">5</div><div class="op-text"><span class="btn-name green">PDFダウンロード</span> でデータを保存し、<strong>LINEグループにPDFを送付</strong></div></div>
           </div>
-          <div class="detail-divider"></div>
-          <span class="method-label">④ 成長加速マッチングサービス（10〜15分）</span>
+        </div>
+
+        <!-- 加点④ -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:16px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">④ 成長加速マッチング 掲載中</div><div class="doc-desc">挑戦課題のステータスが「掲載中」でキャプチャ送付済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('corp-5-d4', this)" style="margin-top:8px;">
+          🔍 ④の詳しい手順を見る（10〜15分）
+          <span class="toggle-arrow">›</span>
+        </button>
+        <div class="detail-content" id="corp-5-d4">
           <div class="info-box orange" style="margin-top:0;">⚠️ 加点要件：応募締切時点で挑戦課題のステータスが <strong>「掲載中」</strong> であること（「掲載終了」は加点対象外）。</div>
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://mirasapo-connect.go.jp/corporation" class="url" target="_blank" rel="noopener">https://mirasapo-connect.go.jp/corporation</a> を開き <span class="btn-name">新規登録・ログイン</span> → <span class="btn-name">事業者</span> をクリック</div></div>
@@ -532,13 +566,6 @@
             <div class="op-step"><div class="op-num">7</div><div class="op-text">財務情報（任意）→ 事業内容・アピールポイント・特徴タグを入力 → 相談先（任意）→ <span class="btn-name green">登録</span> をクリック</div></div>
             <div class="op-step"><div class="op-num">8</div><div class="op-text">挑戦課題のステータスが <strong>「掲載中」</strong> になれば完了。<strong>そのページのキャプチャを送付</strong></div></div>
           </div>
-        </div>
-
-        <div class="doc-list" style="margin-top:14px;">
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">① セキュリティアクション 自己宣言ID</div><div class="doc-desc">5から始まる11桁のIDをスクショで保存済み。</div></div></div>
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">② IT戦略ナビ（IT戦略マップ）PDF取得</div><div class="doc-desc">結果PDFをダウンロードし担当者へ送付済み。</div></div></div>
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">③ 省力化ナビ 登録完了</div><div class="doc-desc">PDFをダウンロードしLINEへ送付済み。</div></div></div>
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">④ 成長加速マッチング 掲載中</div><div class="doc-desc">挑戦課題のステータスが「掲載中」でキャプチャ送付済み。</div></div></div>
         </div>
         <button class="complete-btn" onclick="completeStep('corp-5', 5)">✓ このステップを完了する</button>
       </div>
@@ -836,12 +863,16 @@
       <div class="step-body">
         <div class="info-box green">✅ 全て無料・短時間で設定できます。採択率に直結するので<strong>必ず全て設定</strong>しましょう！</div>
 
-        <button class="detail-toggle-btn" onclick="toggleDetail('sole-5-detail', this)" style="margin-top:14px;">
-          🔍 わからない方はこちら：詳しい操作手順を見る
+        <!-- 加点① -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:14px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">① セキュリティアクション 自己宣言ID</div><div class="doc-desc">5から始まる11桁のIDをスクショで保存済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('sole-5-d1', this)" style="margin-top:8px;">
+          🔍 ①の詳しい手順を見る（5〜10分・無料）
           <span class="toggle-arrow">›</span>
         </button>
-        <div class="detail-content" id="sole-5-detail">
-          <span class="method-label">① セキュリティアクション 自己宣言ID（5〜10分・無料）</span>
+        <div class="detail-content" id="sole-5-d1">
           <div class="info-box blue" style="margin-top:0;">💡 原則、先に <strong>STEP 4 のGビズIDプライム</strong> を取得してから申請します（ログインに使います）。</div>
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://www.ipa.go.jp/security/security-action/entry/" class="url" target="_blank" rel="noopener">https://www.ipa.go.jp/security/security-action/entry/</a> を開く</div></div>
@@ -853,8 +884,18 @@
             <div class="op-step"><div class="op-num">7</div><div class="op-text">確認画面で <span class="btn-name green">この内容で申請する</span> をクリック</div></div>
             <div class="op-step"><div class="op-num">8</div><div class="op-text">申請完了画面に <strong>5から始まる11桁の「自己宣言ID」</strong> が発番される。メールにも届くので<strong>スクショで必ず保存</strong>（申請時に使用）</div></div>
           </div>
-          <div class="detail-divider"></div>
-          <span class="method-label">② IT戦略ナビ（IT戦略マップ作成・10〜15分）</span>
+        </div>
+
+        <!-- 加点② -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:16px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">② IT戦略ナビ（IT戦略マップ）PDF取得</div><div class="doc-desc">結果PDFをダウンロードし担当者へ送付済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('sole-5-d2', this)" style="margin-top:8px;">
+          🔍 ②の詳しい手順を見る（10〜15分）
+          <span class="toggle-arrow">›</span>
+        </button>
+        <div class="detail-content" id="sole-5-d2">
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://digiwith.smrj.go.jp/it-map/" class="url" target="_blank" rel="noopener">https://digiwith.smrj.go.jp/it-map/</a> を開き <span class="btn-name">IT戦略ナビ</span> を開始</div></div>
             <div class="op-step"><div class="op-num">2</div><div class="op-text">質問に順番に回答：業種 → 所在地（<strong>納税証明書に記載の所在地</strong>）→ 従業員数 → 事業所数（<strong>本店を含む・自宅兼事業所なら自宅も含める</strong>）</div></div>
@@ -864,8 +905,18 @@
             <div class="op-step"><div class="op-num">6</div><div class="op-text">現在の経営課題を1つ選択 → 業務上の問題点を1〜2つ選択 → 具体的に取り組みたい事を1〜2つ選択</div></div>
             <div class="op-step"><div class="op-num">7</div><div class="op-text">経営チェック結果画面で <span class="btn-name green">PDFダウンロード</span> → <strong>ダウンロードしたPDFを担当者へ送付</strong></div></div>
           </div>
-          <div class="detail-divider"></div>
-          <span class="method-label">③ 省力化ナビ（5〜10分）</span>
+        </div>
+
+        <!-- 加点③ -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:16px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">③ 省力化ナビ 登録完了</div><div class="doc-desc">PDFをダウンロードしLINEへ送付済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('sole-5-d3', this)" style="margin-top:8px;">
+          🔍 ③の詳しい手順を見る（5〜10分）
+          <span class="toggle-arrow">›</span>
+        </button>
+        <div class="detail-content" id="sole-5-d3">
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://labour-saving.smrj.go.jp/" class="url" target="_blank" rel="noopener">https://labour-saving.smrj.go.jp/</a> を開き <span class="btn-name green">ここから始める</span> をクリック（スマホは「省力化ナビ」で検索）</div></div>
             <div class="op-step"><div class="op-num">2</div><div class="op-text">基本情報を入力。<strong>「GビズID」「企業名」「担当者名」は必ず入力</strong>（加点に必須）。利用規約の最下部で <span class="btn-name">同意する</span> にチェック</div></div>
@@ -873,8 +924,18 @@
             <div class="op-step"><div class="op-num">4</div><div class="op-text">濃い青の吹き出しで表示された箇所のイラストをクリック</div></div>
             <div class="op-step"><div class="op-num">5</div><div class="op-text"><span class="btn-name green">PDFダウンロード</span> でデータを保存し、<strong>LINEグループにPDFを送付</strong></div></div>
           </div>
-          <div class="detail-divider"></div>
-          <span class="method-label">④ 成長加速マッチングサービス（10〜15分）</span>
+        </div>
+
+        <!-- 加点④ -->
+        <div class="doc-item" onclick="toggleDoc(this)" style="margin-top:16px;">
+          <div class="doc-checkbox">✓</div>
+          <div class="doc-text-wrap"><div class="doc-name">④ 成長加速マッチング 掲載中</div><div class="doc-desc">挑戦課題のステータスが「掲載中」でキャプチャ送付済み。</div></div>
+        </div>
+        <button class="detail-toggle-btn" onclick="toggleDetail('sole-5-d4', this)" style="margin-top:8px;">
+          🔍 ④の詳しい手順を見る（10〜15分）
+          <span class="toggle-arrow">›</span>
+        </button>
+        <div class="detail-content" id="sole-5-d4">
           <div class="info-box orange" style="margin-top:0;">⚠️ 加点要件：応募締切時点で挑戦課題のステータスが <strong>「掲載中」</strong> であること（「掲載終了」は加点対象外）。</div>
           <div class="op-steps">
             <div class="op-step"><div class="op-num">1</div><div class="op-text">ブラウザで <a href="https://mirasapo-connect.go.jp/corporation" class="url" target="_blank" rel="noopener">https://mirasapo-connect.go.jp/corporation</a> を開き <span class="btn-name">新規登録・ログイン</span> → <span class="btn-name">事業者</span> をクリック</div></div>
@@ -886,13 +947,6 @@
             <div class="op-step"><div class="op-num">7</div><div class="op-text">財務情報（任意）→ 事業内容・アピールポイント・特徴タグを入力 → 相談先（任意）→ <span class="btn-name green">登録</span> をクリック</div></div>
             <div class="op-step"><div class="op-num">8</div><div class="op-text">挑戦課題のステータスが <strong>「掲載中」</strong> になれば完了。<strong>そのページのキャプチャを送付</strong></div></div>
           </div>
-        </div>
-
-        <div class="doc-list" style="margin-top:14px;">
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">① セキュリティアクション 自己宣言ID</div><div class="doc-desc">5から始まる11桁のIDをスクショで保存済み。</div></div></div>
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">② IT戦略ナビ（IT戦略マップ）PDF取得</div><div class="doc-desc">結果PDFをダウンロードし担当者へ送付済み。</div></div></div>
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">③ 省力化ナビ 登録完了</div><div class="doc-desc">PDFをダウンロードしLINEへ送付済み。</div></div></div>
-          <div class="doc-item" onclick="toggleDoc(this)"><div class="doc-checkbox">✓</div><div class="doc-text-wrap"><div class="doc-name">④ 成長加速マッチング 掲載中</div><div class="doc-desc">挑戦課題のステータスが「掲載中」でキャプチャ送付済み。</div></div></div>
         </div>
         <button class="complete-btn" onclick="completeStep('sole-5', 5)">✓ このステップを完了する</button>
       </div>
